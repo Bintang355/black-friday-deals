@@ -1,0 +1,118 @@
+/* Bargain Burrow — Black Friday 2026. Dark header, warm amber accent, clean cards.
+   System fonts only; no external requests of any kind. */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f6f2ea;
+  color: #1c1a17;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+}
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+a { color: #8a5a00; }
+
+/* Header */
+.site-header { background: #17130e; color: #f7f1e6; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+.brand { display: flex; align-items: center; gap: 12px; }
+.logo { width: 34px; height: 34px; border-radius: 9px; background: #f5a623; flex: none; position: relative; }
+.logo::after { content: ""; position: absolute; left: 8px; top: 17px; width: 18px; height: 9px; border-radius: 0 0 9px 9px; background: #17130e; }
+.site-header h1 { margin: 0; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em; }
+.tagline { margin: 2px 0 0; color: #d8cdb8; font-size: 13px; }
+.header-date { margin: 0; color: #f5a623; font-weight: 700; font-size: 13px; white-space: nowrap; }
+
+/* Stats bar */
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding-top: 16px; padding-bottom: 4px; }
+.stat { background: #fff; border: 1px solid #e5ddcc; border-radius: 10px; padding: 10px 14px; }
+.stat-num { display: block; font-size: 22px; font-weight: 800; color: #17130e; line-height: 1.15; }
+.stat-label { display: block; font-size: 12px; color: #6b645a; margin-top: 2px; }
+
+/* Controls */
+.controls { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 12px; padding-bottom: 4px; }
+.controls input, .controls select {
+  font: inherit; padding: 9px 11px; border: 1px solid #cfc6b2; border-radius: 8px;
+  background: #fff; color: #1c1a17;
+}
+.controls input[type="search"] { flex: 2 1 260px; }
+.controls select { flex: 1 1 150px; }
+.count { margin: 10px auto 12px; color: #6b645a; font-size: 13px; }
+
+/* Deal grid and cards */
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.card {
+  background: #fff; border: 1px solid #e5ddcc; border-radius: 12px;
+  padding: 13px 14px 14px; display: flex; flex-direction: column; gap: 7px;
+}
+.card-top { display: flex; gap: 6px; align-items: center; }
+.store-badge {
+  background: #17130e; color: #fff; font-size: 11px; font-weight: 700;
+  padding: 2px 8px; border-radius: 20px; letter-spacing: 0.02em;
+}
+.cat-tag { font-size: 11px; color: #6b645a; }
+.card-title { margin: 0; font-size: 15px; line-height: 1.3; min-height: 39px; }
+.card-title a { color: #1c1a17; text-decoration: none; }
+.card-title a:hover { text-decoration: underline; }
+.prices { margin: 0; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.price { font-size: 24px; font-weight: 800; color: #17130e; }
+.was { font-size: 14px; color: #8a8175; text-decoration: line-through; }
+.pct-badge { font-size: 13px; font-weight: 800; color: #9a6200; background: #fdf0d3; padding: 2px 7px; border-radius: 6px; }
+.badges { margin: 0; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.verdict { font-size: 11px; font-weight: 800; letter-spacing: 0.04em; padding: 3px 8px; border-radius: 5px; white-space: nowrap; }
+.verdict-new-low { background: #0e7a3d; color: #fff; }
+.verdict-strong { background: #b45309; color: #fff; }
+.verdict-good { background: #1d6fb8; color: #fff; }
+.verdict-routine { background: #6b7280; color: #fff; }
+.save { font-size: 12px; font-weight: 700; color: #0e7a3d; }
+.meta { margin: 0; font-size: 11.5px; color: #8a8175; line-height: 1.4; }
+.cta {
+  margin-top: auto; display: inline-block; text-align: center; text-decoration: none;
+  background: #f5a623; color: #17130e; font-weight: 800; font-size: 14px;
+  padding: 9px 12px; border-radius: 8px;
+}
+.cta:hover { background: #e89a10; }
+.cta.big { font-size: 16px; padding: 12px 20px; }
+
+/* Detail view */
+.detail { background: #fff; border: 1px solid #e5ddcc; border-radius: 12px; padding: 22px 24px; }
+.back { font-size: 14px; font-weight: 700; text-decoration: none; }
+.detail-top { display: flex; gap: 8px; align-items: center; margin-top: 14px; flex-wrap: wrap; }
+.detail-title { margin: 10px 0 12px; font-size: 26px; line-height: 1.25; }
+.detail-prices { margin: 0 0 14px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.price.big { font-size: 36px; }
+.was.big { font-size: 18px; }
+.pct-badge.big { font-size: 16px; }
+.save.big { font-size: 15px; }
+.evidence { font-size: 15px; }
+.cross-note { background: #fdf0d3; border-left: 4px solid #f5a623; padding: 10px 12px; border-radius: 0 8px 8px 0; font-size: 14px; }
+
+/* Empty state */
+.empty { background: #fff; border: 1px solid #e5ddcc; border-radius: 12px; padding: 32px; text-align: center; }
+.empty button { font: inherit; font-weight: 700; padding: 9px 16px; border-radius: 8px; border: 1px solid #cfc6b2; background: #f5a623; cursor: pointer; }
+
+/* Explainer */
+.explainer { padding-top: 28px; padding-bottom: 8px; }
+.explainer h2 { margin: 0 0 8px; font-size: 20px; }
+.explainer p { max-width: 760px; }
+.verdict-list { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 10px; max-width: 760px; }
+.verdict-list li { background: #fff; border: 1px solid #e5ddcc; border-radius: 10px; padding: 11px 13px; font-size: 14px; }
+.verdict-list .verdict { margin-right: 8px; }
+
+/* Footer */
+.site-footer { margin-top: 28px; background: #17130e; color: #d8cdb8; font-size: 13px; }
+.site-footer .wrap { padding-top: 20px; padding-bottom: 24px; }
+.site-footer p { margin: 6px 0; max-width: 900px; }
+.site-footer strong { color: #f5a623; }
+
+/* Phone */
+@media (max-width: 1020px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px) {
+  .grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .site-header h1 { font-size: 21px; }
+  .header-date { display: none; }
+  .controls input[type="search"] { flex-basis: 100%; }
+  .controls select { flex-basis: calc(50% - 4px); }
+  .detail-title { font-size: 21px; }
+  .price.big { font-size: 30px; }
+}

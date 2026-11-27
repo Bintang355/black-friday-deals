@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bargain Burrow — Black Friday 2026</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='4' fill='%23f5a623'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <div>
+        <h1>Bargain Burrow</h1>
+        <p class="tagline">Black Friday 2026 — real deals, checked today.</p>
+      </div>
+    </div>
+    <p class="header-date">27 Nov 2026</p>
+  </div>
+</header>
+
+<section class="stats wrap" aria-label="Deal summary">
+  <div class="stat"><span class="stat-num" id="stat-deals">34</span><span class="stat-label">deals checked</span></div>
+  <div class="stat"><span class="stat-num" id="stat-savings">—</span><span class="stat-label">total savings</span></div>
+  <div class="stat"><span class="stat-num" id="stat-biggest">—</span><span class="stat-label">biggest discount</span></div>
+  <div class="stat"><span class="stat-num" id="stat-checked">—</span><span class="stat-label">last checked</span></div>
+</section>
+
+<section class="controls wrap" aria-label="Search and filters">
+  <input id="search" type="search" placeholder="Search deals, stores, categories..." aria-label="Search deals">
+  <select id="category" aria-label="Filter by category">
+    <option value="All">All categories</option>
+    <option>Audio</option>
+    <option>TVs</option>
+    <option>Laptops</option>
+    <option>Tablets</option>
+    <option>Wearables</option>
+    <option>Smart home</option>
+    <option>Home</option>
+    <option>Kitchen</option>
+    <option>Gaming</option>
+    <option>Toys</option>
+  </select>
+  <select id="store" aria-label="Filter by store">
+    <option value="All">All stores</option>
+    <option>Amazon</option>
+    <option>Best Buy</option>
+    <option>Walmart</option>
+  </select>
+  <select id="min-discount" aria-label="Filter by minimum discount">
+    <option value="0">Any discount</option>
+    <option value="20">20% off or more</option>
+    <option value="30">30% off or more</option>
+    <option value="50">50% off or more</option>
+  </select>
+  <select id="sort" aria-label="Sort deals">
+    <option value="pct">Sort: biggest % off</option>
+    <option value="saved">Sort: biggest $ saved</option>
+    <option value="price">Sort: lowest price</option>
+  </select>
+</section>
+
+<p class="count wrap" id="count">Showing 34 of 34 deals</p>
+
+<main id="view" class="wrap"></main>
+
+<section id="explainer" class="wrap explainer" aria-label="Is it really a deal?">
+  <h2>Is it really a deal?</h2>
+  <p>Every price on this page was read at the named store, or in a deals source that names the store, on 27 November 2026. The "usual price" is what the product sold for before the sale — not an inflated reference price. The verdict on each deal says what the evidence shows:</p>
+  <ul class="verdict-list">
+    <li><span class="verdict verdict-new-low">NEW LOW</span> The lowest price we have seen for this product.</li>
+    <li><span class="verdict verdict-strong">STRONG DEAL</span> A big cut — usually 30% or more — off a stable usual price, or a large saving on something that rarely discounts.</li>
+    <li><span class="verdict verdict-good">GOOD DEAL</span> A solid saving, roughly a fifth to a third off, or a meaningful cut on a product that seldom goes on sale.</li>
+    <li><span class="verdict verdict-routine">ROUTINE SALE</span> Under 20% off, or the first small cut on a brand-new item. Listed honestly, so you can see it is not a bargain.</li>
+  </ul>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>How we check.</strong> Prices are read at the store or in a named deals source and written down with the time and source. A deal can sell out or change price after we check it, so open the store link to confirm before you buy.</p>
+    <p>Prices checked 27 Nov 2026; prices can change or sell out. Bargain Burrow is not affiliated with Amazon, Best Buy, Walmart, Target, or any brand listed here. Store links go to the store's own search for the product.</p>
+  </div>
+</footer>
+</body>
+</html>
